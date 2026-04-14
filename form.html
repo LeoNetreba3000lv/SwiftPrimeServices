@@ -512,7 +512,7 @@
       <div class="info-content">
         <div class="service-pill" id="servicePill">🏠 Free Estimate</div>
         <h2 class="info-title">Get Your <em>Free</em><br>Estimate Today</h2>
-        <p class="info-desc">Fill out the form and a licensed Sacramento roofing contractor will reach out within 24 hours. No obligation, no pressure.</p>
+        <p class="info-desc">Fill out the form and a licensed Sacramento roofing contractor will reach out within 24 hours. No pressure.</p>
         <div class="info-steps">
           <div class="step">
             <div class="step-num">1</div>
@@ -536,7 +536,7 @@
       <div id="formContent">
         <div class="form-heading">
           <h2 id="formMainTitle">Request Free Estimate</h2>
-          <p id="formMainSubtitle">Takes less than 2 minutes. Licensed contractors only.</p>
+          <p id="formMainSubtitle"></p>
         </div>
 
         <form id="estimateForm" onsubmit="handleSubmit(event)" novalidate>
@@ -845,7 +845,7 @@
       title: 'Expert Roofing',
       desc: 'From minor repairs to full replacements — we connect you with Sacramento\'s top licensed roofing contractors.',
       formTitle: 'Get Your Free Roofing Estimate',
-      formSubtitle: 'Fill out the form and a licensed Sacramento roofing contractor will reach out within 24 hours. No obligation, no pressure.',
+      formSubtitle: 'Fill out the form and a licensed Sacramento roofing contractor will reach out within 24 hours. No pressure.',
       imgKey: 'Roofing',
       points: [
         { icon: '🛡️', title: 'Licensed & Insured Only', text: 'Every contractor we work with is fully licensed and insured in California.' },
@@ -858,7 +858,7 @@
       title: 'Professional Landscaping & Yard',
       desc: 'Transform your outdoor space with Sacramento\'s best landscaping professionals — lawn care, design, and more.',
       formTitle: 'Get Your Free Landscaping Estimate',
-      formSubtitle: 'Fill out the form and a licensed Sacramento landscaping contractor will reach out within 24 hours. No obligation, no pressure.',
+      formSubtitle: 'Fill out the form and a licensed Sacramento landscaping contractor will reach out within 24 hours. No pressure.',
       imgKey: 'Landscaping',
       points: [
         { icon: '🛡️', title: 'Licensed & Insured Only', text: 'Every contractor we work with is fully licensed and insured in California.' },
@@ -871,7 +871,7 @@
       title: 'Fence Installation & Repair',
       desc: 'New fences and repairs by licensed Sacramento contractors — residential properties.',
       formTitle: 'Get Your Free Fence Estimate',
-      formSubtitle: 'Fill out the form and a licensed Sacramento fence contractor will reach out within 24 hours. No obligation, no pressure.',
+      formSubtitle: 'Fill out the form and a licensed Sacramento fence contractor will reach out within 24 hours. No pressure.',
       imgKey: 'Fence',
       points: [
         { icon: '🛡️', title: 'Licensed & Insured Only', text: 'Every contractor we work with is fully licensed and insured in California.' },
@@ -894,7 +894,7 @@
     document.getElementById('serviceInfoTitle').textContent = data.title;
     document.getElementById('serviceInfoDesc').textContent = data.desc;
     document.getElementById('formMainTitle').textContent = data.formTitle;
-    document.getElementById('formMainSubtitle').textContent = data.formSubtitle;
+    document.getElementById('formMainSubtitle').textContent = '';
     const infoDesc = document.querySelector('.info-desc');
     if (infoDesc) infoDesc.textContent = data.formSubtitle;
     document.getElementById('serviceInfoImg').style.backgroundImage = `url('${serviceImages[data.imgKey]}')`;
